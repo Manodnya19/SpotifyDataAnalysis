@@ -234,10 +234,10 @@ if add_selectbox == 'Big data analysis':
     st.line_chart(df)
     
 ###############################################################################
-    st.subheader("Below data is an extraction of highest lowest and average rank of all the songs by selected atrist")
-    n_art = st.selectbox(label='Please select an artist', options=df1.artist.unique())
-    avge = spark.sql("SELECT Title, MIN(rank) Highest, MAX(rank) Lowest, AVG(rank) Avg FROM charts WHERE artist like '{}' AND chart='top200' GROUP BY title ORDER BY Highest;").format(n_art)
-    avge
+    #st.subheader("Below data is an extraction of highest lowest and average rank of all the songs by selected atrist")
+    #n_art = st.selectbox(label='Please select an artist', options=df1.artist.unique())
+    #avge = spark.sql("SELECT Title, MIN(rank) Highest, MAX(rank) Lowest, AVG(rank) Avg FROM charts WHERE artist like '{}' AND chart='top200' GROUP BY title ORDER BY Highest;").format(n_art)
+    #avge
     
     # Draw
     
